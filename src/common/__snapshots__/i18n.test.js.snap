@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`I18n test COMMON_LANGS should exist 1`] = `"{\\"en-US\\":{\\"PAGE_TITLE\\":\\"AngularJS ES6 multi page demo\\"},\\"zh-CN\\":{\\"PAGE_TITLE\\":\\"AngularJS ES6 多页面 demo\\"}}"`;
+
+exports[`I18n test Deep merge right empty object 1`] = `
+Object {
+  "en-US": Object {
+    "abc": "123",
+  },
+  "zh-CN": Object {
+    "abc": "一二三",
+  },
+}
+`;

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+Book Id: {{$ctrl.params.bookId}}<br />
+Book demo: {{$ctrl.params}}<br />
+List: 
+<ul class="book-list">
+  <li ng-repeat="book in $ctrl.books">
+    <span ng-bind="book.name"></span> -
+    <span ng-bind="book.location"></span>
+  </li>
+  <li ng-if="$ctrl.error" ng-bind="$ctrl.error"></li>
+</ul>

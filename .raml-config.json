@@ -1,0 +1,6 @@
+{
+  "controller": "./mock/controller",
+  "raml": "./mock",
+  "main": "api.raml",
+  "port": 3068
+}

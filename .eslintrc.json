@@ -1,0 +1,25 @@
+{
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": false
+    }
+  },
+  "globals": {
+    "R": true,
+    "rxjs": true,
+    "inject": true,
+    "angular": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jquery": true,
+    "jest": true,
+    "jasmine": true
+  }
+}
