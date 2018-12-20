@@ -6,8 +6,8 @@ module.exports = merge(common, {
   optimization: {
     // Should keep this sideEffects, otherwise the pcss file will not include.
     sideEffects: false,
-    splitChunks: {
-      minSize: 30000,
-    },
+    // splitChunks: {
+    //   minSize: 30000,
+    // },
   },
 });

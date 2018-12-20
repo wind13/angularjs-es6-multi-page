@@ -16,9 +16,9 @@ module.exports = merge(common, {
   //   port: 8000
   // },
 
-  optimization: {
-    splitChunks: {
-      minSize: 30000,
-    },
-  },
+  // optimization: {
+  //   splitChunks: {
+  //     minSize: 30000,
+  //   },
+  // },
 });
