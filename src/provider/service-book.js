@@ -1,9 +1,11 @@
 export default {
   name: 'bookService',
-  fn: ['$http', function ($http) {
+  fn: function ($http) {
+    'ngInject'
     this.fetch = () => $http.get('/someapi/books');
-  }],
-  mockFn: ['$http', function ($http) {
+  },
+  mockFn: function ($http) {
+    'ngInject'
     this.fetch = () => $http.get('/stub/books.json');
-  }]
+  }
 }

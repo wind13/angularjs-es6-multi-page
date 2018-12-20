@@ -1,3 +1,5 @@
+import { env, envs } from "./global";
+
 /*eslint no-console: ["error", { allow: ["warn", "error", "log"] }] */
 
 export const Ramda = R;
@@ -9,7 +11,9 @@ export const Rx = rxjs;
 export const RxOper = rxjs.operators;
 
 export const log = function (msg) {
-  console.log(msg);
+  if (env === envs.DEV) {
+    console.log(msg);
+  }
 }
 
 export const greetings = 'Hello from.. util!';
@@ -25,7 +29,7 @@ export function camelCaseToDash(str) {
 
 /**
  * This version will handle imperfect camel case/pascal case with multiple capital letters in a row
- * @param {string} str 
+ * @param {string} str
  */
 export function camelCaseToDashAdv(str) {
   return str
