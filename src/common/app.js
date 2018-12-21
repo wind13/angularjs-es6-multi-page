@@ -2,6 +2,7 @@ import { Ng, log, Ramda } from "./util";
 import { initI18n } from './i18n';
 import Mdle from "./mdle";
 import { APP_NAME, APP_CTRL_NAME, PAGE_TITLE, APP_PAGE_NAME, PREFIX_NATIVE_CALLBACK } from "./global";
+import filters from "../provider/filters";
 
 /**
  * Init the RDO var into window.
@@ -55,6 +56,10 @@ export const InitApp = function (languages = {}, deps = [], pageCmpt = {}) {
   });
 
   app.registComponent(Ramda.merge(pageCmpt, { name: APP_PAGE_NAME }));
+
+  Ramda.forEach(filter => {
+    app.registFilter(filter);
+  }, filters);
 
   log('app regist page success...')
   return app;

@@ -6,6 +6,6 @@ export default {
   },
   mockFn: function ($http) {
     'ngInject'
-    this.fetch = () => $http.get('/stub/users.json');
+    this.fetch = () => $http.get('/stub/users.json?v=12131');
   }
 }

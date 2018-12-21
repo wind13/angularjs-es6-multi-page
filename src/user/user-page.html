@@ -1,5 +1,6 @@
 <div class="tile">
     <h3 data-translate="USER" class="tile-title"></h3>
+    <p>{{'Hello' | reverse}}</p>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -19,6 +20,7 @@
       </tbody>
     </table>
     <div class="tile-footer">
-      <button class="btn btn-primary">Filter</button>
+      <input type="text" name="username" data-ng-model="$ctrl.nameFilter" />
+      <button class="btn btn-primary" data-ng-click="$ctrl.filterUserName()">Filter</button>
     </div>
   </div>
