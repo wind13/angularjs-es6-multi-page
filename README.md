@@ -19,3 +19,7 @@ Login, Register, Comment etc.
 ## Styles
 
 - Using [Vali Admin](https://github.com/pratikborsadiya/vali-admin)
+
+## Notes
+
+- We can work together.
