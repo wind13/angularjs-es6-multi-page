@@ -9,7 +9,11 @@
 
 # node module
 node_modules
+
 *.log
+
+# Customer ignore
 app/lib
 app/web/modern
 app/web/config
+app/pages
