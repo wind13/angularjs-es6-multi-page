@@ -1,12 +1,21 @@
-<h1 data-translate="USER"></h1>
-<div class="row">
-  <div id="divUserList" class="col-sm-10 userList">
-    <div data-ng-repeat="user in $ctrl.users">
-      <p class="pUser" data-ng-bind="user.name"></p>
-      <p class="pUser" data-ng-bind="user.location"></p>
-      <p class="pUser" data-ng-bind="user.age"></p>
-    </div>
-    <div data-ng-bind="$ctrl.users.length"></div>
-    <p class="pUser" data-translate="ERROR_500"></p>
+<div class="tile">
+    <h3 data-translate="USER" class="tile-title"></h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>User Name</th>
+          <th>Location</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-ng-repeat="user in $ctrl.users">
+          <td></td>
+          <td data-ng-bind="user.name"></td>
+          <td data-ng-bind="user.location"></td>
+          <td data-ng-bind="user.age"></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</div>

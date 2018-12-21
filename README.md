@@ -15,3 +15,7 @@ Login, Register, Comment etc.
 - [x] Login page
 - [ ] Regitster page
 - [ ] Comment list page.
+
+## Styles
+
+- Using [Vali Admin](https://github.com/pratikborsadiya/vali-admin)
